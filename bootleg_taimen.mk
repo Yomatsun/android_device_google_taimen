@@ -48,4 +48,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := google/taimen/taimen:10/QQ3A.200605.001/6392402:user/release-keys
 
 $(call inherit-product, vendor/google/taimen/taimen-vendor.mk)
-$(call inherit-product, vendor/gapps/pixel-gapps.mk)
+$(call inherit-product, vendor/pixelgapps/pixel-gapps.mk)
