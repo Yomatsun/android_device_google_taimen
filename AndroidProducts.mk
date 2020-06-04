@@ -15,7 +15,11 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_taimen.mk \
+    $(LOCAL_DIR)/bootleg_taimen.mk \
+    $(LOCAL_DIR)/aosp_taimen.mk 
 
 COMMON_LUNCH_CHOICES := \
-    aosp_taimen-userdebug
+    bootleg_taimen-eng \
+    bootleg_taimen-user \
+    bootleg_taimen-userdebug \
+    aosp_taimen-userdebug 
