@@ -43,9 +43,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Device Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=taimen \
-    PRIVATE_BUILD_DESC="taimen-user 10 QQ3A.200605.001 6392402 release-keys"
+    PRIVATE_BUILD_DESC="taimen-user 10 QQ3A.200705.002 6506677 release-keys"
 
-BUILD_FINGERPRINT := google/taimen/taimen:10/QQ3A.200605.001/6392402:user/release-keys
+BUILD_FINGERPRINT := google/taimen/taimen:10/QQ3A.200705.002/6506677:user/release-keys
 
 $(call inherit-product, vendor/google/taimen/taimen-vendor.mk)
 $(call inherit-product, vendor/pixelgapps/pixel-gapps.mk)
