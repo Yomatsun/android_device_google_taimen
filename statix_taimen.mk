@@ -9,16 +9,19 @@ $(call inherit-product, device/google/taimen/aosp_taimen.mk)
 $(call inherit-product, device/google/taimen/device.mk)
 $(call inherit-product, vendor/google/taimen/taimen-vendor.mk)
 
-# Inherit some common Revenge OS stuff.
-$(call inherit-product, vendor/revengeos/config/common.mk)
+# Inherit statix's custom configurations
+$(call inherit-product, vendor/statix/config/common.mk)
+$(call inherit-product, vendor/statix/config/gsm.mk)
 
-# Some Extra's
-TARGET_BOOT_ANIMATION_RES := 1440
-REVENGEOS_BUILDTYPE := UNOFFICIAL
+# Screen Resolution for the Bootanimation
+TARGET_SCREEN_HEIGHT := 2560
+TARGET_SCREEN_WIDTH := 1440
+
+TARGET_GAPPS_ARCH := arm64
 
 # Device info
 PRODUCT_BRAND := google
-PRODUCT_NAME := revengeos_taimen
+PRODUCT_NAME := statix_taimen
 PRODUCT_MODEL := Pixel 2 XL
 PRODUCT_RESTRICT_VENDOR_FILES := false
 

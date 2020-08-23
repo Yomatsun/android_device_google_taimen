@@ -16,10 +16,10 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/aosp_taimen.mk \
-    $(LOCAL_DIR)/revengeos_taimen.mk 
+    $(LOCAL_DIR)/statix_taimen.mk 
 
 
 COMMON_LUNCH_CHOICES := \
-    revengeos_taimen-eng \
-    revengeos_taimen-userdebug \
-    revengeos_taimen-user
+    statix_taimen-eng \
+    statix_taimen-userdebug \
+    statix_taimen-user
