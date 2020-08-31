@@ -1,0 +1,8 @@
+#Add nessceary Sepolicys for Statix
+allow vendor_misc_writer proc_cmdline:file {open};
+allow vendor_misc_writer proc_cmdline:file {getattr};
+allow vendor_misc_writer sysfs_dt_firmware_android:file {read};
+allow vendor_misc_writer sysfs_dt_firmware_android:file {open};
+allow vendor_misc_writer sysfs_dt_firmware_android:file {getattr};
+allow vendor_misc_writer sysfs_dt_firmware_android:dir {read};
+allow vendor_misc_writer sysfs_dt_firmware_android:dir {open};

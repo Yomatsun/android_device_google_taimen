@@ -1,18 +1,1 @@
 type sysfs_touch_shell, sysfs_type, fs_type;
-
-allow vendor_misc_writer proc_cmdline:file {open};
-allow vendor_misc_writer proc_cmdline:file {getattr};
-
-allow vendor_misc_writer sysfs_dt_firmware_android:file {read};
-allow vendor_misc_writer sysfs_dt_firmware_android:file {open};
-allow vendor_misc_writer sysfs_dt_firmware_android:file {getattr};
-allow vendor_misc_writer sysfs_dt_firmware_android:dir {read};
-allow vendor_misc_writer sysfs_dt_firmware_android:dir {open};
-
-allow vendor_misc_writer gsi_metadata_file:dir {open};
-
-allow crash_dump hwservicemanager_prop:file {open};
-allow crash_dump hwservicemanager_prop:file {getattr};
-
-allow flags_health_check adbtcp_prop:file {open};
-allow flags_health_check adbtcp_prop:file {getattr};
