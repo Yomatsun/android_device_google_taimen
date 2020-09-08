@@ -1,5 +1,4 @@
-//
-// Copyright (C) 2019 The Android Open Source Project
+// Copyright 2016 The Android Open Source Project
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -12,28 +11,19 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
-//
 
-cc_library_static {
-    name: "librecovery_ui_taimen",
-    owner: "google",
+cc_library_shared {
+    name: "libqcomvoiceprocessingdescriptors",
+    srcs: ["voice_processing_descriptors.c"],
+    header_libs: [
+        "libaudioeffects",
+        "libhardware_headers",
+    ],
+    relative_install_path: "soundfx",
+    owner: "qcom",
+    proprietary: true,
     cflags: [
         "-Wall",
-        "-Wextra",
         "-Werror",
-        "-pedantic",
-    ],
-    srcs: [
-        "recovery_ui.cpp",
-    ],
-
-    whole_static_libs: [
-        "libmisc_writer",
-        "libbootloader_message",
-    ],
-
-    shared_libs: [
-        "libbase",
-        "librecovery_ui",
     ],
 }
